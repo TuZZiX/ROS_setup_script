@@ -53,10 +53,6 @@ echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21
   sudo apt-get --yes --force-yes install bleachbit synaptic
   sudo apt-get --yes --force-yes install gitk git-gui
   sudo apt-get --yes --force-yes install kazam vlc
-  sudo apt-get --yes --force-yes install aptitude
-  sudo apt-get --yes --force-yes install xserver-xorg-input-mtrack-lts-trusty 
-  sudo apt-get --yes --force-yes install fglrx
-
   sudo apt-add-repository -y ppa:remmina-ppa-team/remmina-next
   sudo apt-get update
   sudo apt-get --yes --force-yes install remmina remmina-plugin-rdp libfreerdp-plugins-standard
