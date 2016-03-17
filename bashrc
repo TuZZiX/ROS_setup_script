@@ -32,3 +32,6 @@ alias baxter_master='export ROS_MASTER_URI="http://baxter01:11311"'
 
 export PATH=$PATH:~/clion/bin
 alias clion='~/clion/bin/clion.sh'
+
+alias ckm='roscd && catkin_make'
+alias brc='cd ~ && gedit .bashrc'
