@@ -35,16 +35,21 @@ echo -e "\e[34m >>> Setting up rosinstall \e[39m"
 
 echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21m \e[39m"
 
-  sudo apt-get --yes --force-yes install ros-indigo-joy ros-indigo-costmap-2d ros-indigo-nav-core ros-indigo-sound-play ros-indigo-amcl ros-indigo-move-base ros-indigo-controller-interface ros-indigo-gazebo-ros-control ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-moveit-msgs ros-indigo-stdr-simulator
+  sudo apt-get --yes --force-yes install ros-indigo-joy ros-indigo-costmap-2d ros-indigo-nav-core ros-indigo-sound-play ros-indigo-amcl ros-indigo-move-base ros-indigo-controller-interface ros-indigo-gazebo-ros-control ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-moveit-full ros-indigo-stdr-simulator
   sudo apt-get --yes --force-yes install ros-indigo-baxter-core-msgs ros-indigo-baxter-examples ros-indigo-baxter-sim-controllers ros-indigo-baxter-sim-examples ros-indigo-baxter-tools ros-indigo-baxter-description ros-indigo-baxter-sim-hardware ros-indigo-baxter-interface ros-indigo-baxter-simulator ros-indigo-baxter-common ros-indigo-baxter-sdk ros-indigo-baxter-sim-io ros-indigo-baxter-gazebo ros-indigo-baxter-moveit-config
-  sudo apt-get --yes --force-yes install ros-indigo-libfreenect ros-indigo-freenect-camera ros-indigo-freenect-launch
+  sudo apt-get --yes --force-yes install ros-indigo-libfreenect ros-indigo-freenect-camera ros-indigo-freenect-launch ros-indigo-openni-launch libopenni-dev
   sudo apt-get --yes --force-yes install ros-indigo-octomap ros-indigo-octomap-ros ros-indigo-octomap-server ros-indigo-octomap-msgs ros-indigo-octomap-rviz-plugins ros-indigo-octomap-mapping
-  sudo apt-get --yes --force-yes install ros-indigo-openni-launch libopenni-dev
-  sudo apt-get --yes --force-yes install ros-indigo-navigation ros-indigo-csm
-
+  sudo apt-get --yes --force-yes install ros-indigo-navigation ros-indigo-csm ros-indigo-laser-geometry
+  sudo apt-get --yes --force-yes install ros-indigo-hector-gazebo ros-indigo-turtlebot
+  sudo apt-get --yes --force-yes install ros-indigo-object-recognition-capture ros-indigo-object-recognition-core ros-indigo-object-recognition-linemod ros-indigo-object-recognition-msgs ros-indigo-object-recognition-reconstruction ros-indigo-object-recognition-renderer ros-indigo-object-recognition-ros ros-indigo-object-recognition-ros-visualization ros-indigo-object-recognition-tabletop ros-indigo-object-recognition-tod ros-indigo-object-recognition-transparent-objects
   echo -e "\e[1m \e[34m >>> Installing support software \e[21m \e[39m"
+  sudo apt-get --yes --force-yes install git build-essential
+  sudo apt-get --yes --force-yes install python-pip python-dev build-essential 
+  sudo pip install --upgrade pip 
+  sudo pip install --upgrade virtualenv 
+  sudo pip install numpy scipy matplotlib pandas
+  sudo pip install virtualenv virtualenvwrapper
 
-  sudo apt-get --yes --force-yes install git
   sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
   sudo apt-get update
   sudo apt-get --yes --force-yes install sublime-text-installer 
