@@ -42,6 +42,7 @@ echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21
   sudo apt-get --yes --force-yes install ros-indigo-navigation ros-indigo-csm ros-indigo-laser-geometry
   sudo apt-get --yes --force-yes install ros-indigo-hector-components-description ros-indigo-hector-compressed-map-transport ros-indigo-hector-geotiff ros-indigo-hector-geotiff-plugins ros-indigo-hector-imu-attitude-to-tf ros-indigo-hector-imu-tools ros-indigo-hector-localization ros-indigo-hector-mapping ros-indigo-hector-map-server ros-indigo-hector-map-tools ros-indigo-hector-marker-drawing ros-indigo-hector-models ros-indigo-hector-nav-msgs ros-indigo-hector-object-tracker ros-indigo-hector-pose-estimation ros-indigo-hector-pose-estimation-core ros-indigo-hector-sensors-description ros-indigo-hector-slam ros-indigo-hector-slam-launch ros-indigo-hector-trajectory-server ros-indigo-hector-uav-msgs ros-indigo-hector-worldmodel ros-indigo-hector-worldmodel-geotiff-plugins ros-indigo-hector-worldmodel-msgs ros-indigo-hector-xacro-tools
   sudo apt-get --yes --force-yes install ros-indigo-object-recognition-capture ros-indigo-object-recognition-core ros-indigo-object-recognition-linemod ros-indigo-object-recognition-msgs ros-indigo-object-recognition-reconstruction ros-indigo-object-recognition-renderer ros-indigo-object-recognition-ros ros-indigo-object-recognition-ros-visualization ros-indigo-object-recognition-tabletop ros-indigo-object-recognition-tod ros-indigo-object-recognition-transparent-objects
+  sudo apt-get --yes --force-yes install ros-indigo-openslam-gmapping ros-indigo-slam-gmapping ros-indigo-hector-slam
   echo -e "\e[1m \e[34m >>> Installing support software \e[21m \e[39m"
   sudo apt-get --yes --force-yes install git build-essential
   sudo apt-get --yes --force-yes install python-pip python-dev build-essential 
@@ -81,4 +82,5 @@ echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21
 
   # for virtual machine setup
   #sudo rm /usr/lib/x86_64-linux-gnu/mesa/libGL.so
+  
   #sudo ln -s /usr/lib/x86_64-linux-gnu/mesa/libGL.so.1 /usr/lib/x86_64-linux-gnu/mesa/libGL.so
