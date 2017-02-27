@@ -1,0 +1,23 @@
+# export PS1="\[\033[38;5;10m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;11m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]\\$ \[$(tput sgr0)\]"
+
+# ROS stuff:
+source /opt/ros/kinetic/setup.bash
+export ROS_WORKSPACE=$HOME'/ros_ws'
+source $ROS_WORKSPACE/devel/setup.sh
+export ROS_WORKSPACE=$HOME'/ros_ws'
+
+alias cwru_create_pkg='~/ros_ws/src/cwru_baxter/build_scripts/cwru_create_pkg.py'
+alias cs_create_pkg='~/ros_ws/src/external_packages/cs_create_pkg.py'
+
+#export ROS_IP="atlas1.case.edu"
+#export ROS_HOSTNAME="atlas1"
+
+alias baxter_master='$ROS_WORKSPACE/"baxter.sh"'
+
+export PATH=$PATH:~/clion/bin:~/pycharm/bin:~/idea-IU/bin
+alias clion='~/clion/bin/clion.sh'
+alias pycharm='~/pycharm/bin/pycharm.sh'
+alias idea='~/idea-IU/bin/idea.sh'
+
+alias ckm='roscd && catkin_make'
+alias brc='gedit ~/.bashrc'
