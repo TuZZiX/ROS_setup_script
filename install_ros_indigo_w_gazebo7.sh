@@ -43,7 +43,7 @@ echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21
   sudo apt-get --yes --force-yes install ros-indigo-joy ros-indigo-costmap-2d ros-indigo-nav-core ros-indigo-sound-play ros-indigo-amcl ros-indigo-move-base ros-indigo-controller-interface ros-indigo-joint-state-controller ros-indigo-effort-controllers ros-indigo-stdr-simulator
   sudo apt-get --yes --force-yes install ros-indigo-libfreenect ros-indigo-freenect-camera ros-indigo-freenect-launch ros-indigo-openni-launch libopenni-dev
   sudo apt-get --yes --force-yes install ros-indigo-octomap ros-indigo-octomap*
-  sudo apt-get --yes --force-yes install ros-indigo-navigation ros-indigo-csm ros-indigo-laser-geometry
+  sudo apt-get --yes --force-yes install ros-indigo-navigation ros-indigo-csm ros-indigo-laser-geometry ros-indigo-trac-ik*
   sudo apt-get --yes --force-yes install ros-indigo-openslam-gmapping ros-indigo-gmapping ros-indigo-hector-*
   sudo apt-get --yes --force-yes install ros-indigo-control* ros-indigo-robot-controllers* ros-indigo-robot-state-publisher
   sudo apt-get --yes --force-yes install ros-indigo-ros-cont* ros-indigo-joint-*
@@ -59,6 +59,13 @@ echo -e "\e[1m \e[34m >>> Installing dependencies for mobile robotics code \e[21
   sudo pip install --upgrade virtualenv
   sudo pip install numpy scipy
   sudo pip install virtualenv virtualenvwrapper
+  sudo pip install bluelet
+  sudo pip3 install rospkg
+  sudo pip install cpppo
+  sudo pip3 install cpppo
+  sudo apt-get install python-backports.ssl-match-hostname
+  sudo pip install configparser
+  sudo pip3 install configparser
 
   sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
   sudo apt-get update
