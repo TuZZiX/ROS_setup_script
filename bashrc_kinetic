@@ -21,3 +21,5 @@ alias idea='~/idea-IU/bin/idea.sh'
 
 alias ckm='roscd && catkin_make'
 alias brc='gedit ~/.bashrc'
+
+eval $(thefuck --alias)
