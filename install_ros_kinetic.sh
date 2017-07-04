@@ -47,6 +47,7 @@ sudo apt-get --yes install ros-kinetic-moveit* ros-kinetic-trac-ik-kinematics-pl
 sudo apt-get --yes install ros-kinetic-object-recognition-*
 sudo apt-get --yes install ros-indigo-trac-ik*
 sudo apt-get --yes install ariac
+sudo apt-get --yes install ros-kinetic-teleop-twist-keyboard ros-kinetic-key-teleop ros-kinetic-twist-mux ros-kinetic-interactive-marker-twist-server
 
 echo -e "\e[1m \e[34m >>> Installing support software \e[21m \e[39m"
 sudo apt-get --yes install python3-dev python3-pip
